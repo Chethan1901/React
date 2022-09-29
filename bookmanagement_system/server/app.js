@@ -8,11 +8,13 @@ const app = express();
 const port = config.get("PORT");
 app.use(express.json());
 
+app.use("/api/User", UserRouter);
+
 app.get("/", (req, res) => {
 	res.send("this is Book Management System API BAckend");
 });
 
-app.use("/api/User", UserRouter);
+
 
 app.listen(port, () => {
 	console.log("server started at port: ", port);

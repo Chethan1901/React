@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-
+import Header from "./Header";
+import NavBar from "./Navbar";
 
 function Main() {
 
@@ -16,6 +17,8 @@ function Main() {
 
     console.log(data);
     return (
+        <>
+        <Header/>
         <div className="main">
             <div>
                 <h2>{data.title} - <span className="author">{data.author} </span></h2>
@@ -25,6 +28,8 @@ function Main() {
 
             </div>
         </div>
+        <NavBar/>
+        </>
     )
 }
 

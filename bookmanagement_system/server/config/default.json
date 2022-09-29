@@ -1,6 +1,7 @@
 {
 	"URL": "http://192.168.68.202:5000",
 	"PORT": 5000,
+	"PRIVATE_KEY": "codeforindia",
 	"EMAIL_SMTP": {
 		"HOST": "mail.csmafia.com",
 		"AUTH": {

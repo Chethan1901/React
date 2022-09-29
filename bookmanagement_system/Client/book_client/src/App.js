@@ -1,20 +1,19 @@
-import './App.css';
-import Header from './Component/Header';
-import Navbar from './Component/Navbar';
-import Main from './Component/main';
+import "./App.css";
+import Main from "./Component/main";
+import Register from "./Component/Register"
+import Login from "./Component/Login";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Header />
-      <div style={{ overflow: "auto" }}>
-        <Main />
-        <Navbar />
-      </div>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/Register" element={<Register />} />
+        <Route path="/Login" element={<Login />} />
+
+      </Routes>
     </>
-  );
+  )
 }
-
-export default App;
-
-//Note : in-line styling in React JSx must be sent as object)key-value pair
+export default App
